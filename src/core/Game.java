@@ -11,7 +11,7 @@ public class Game {
 		areas = new ArrayList<Area>();
 		areas.add(new Area (windowWidth/2, windowHeight, startDifficulty, changeSpeed, initialVelocity));
 		areas.add(new Area (windowWidth/2, windowHeight, startDifficulty, changeSpeed, initialVelocity));
-		ai = new AiBitch(0.8); //1 = perfect, 0 = basic bitch
+		ai = new Ai(0.8); //1 = perfect, 0 = basic bitch
 		layerHeight = Block.getHeight() + getBuildingArea(0).getGapBetweenLayers();
 		numBlocksFitOnScreen = (int) (startWindowHeight/layerHeight);
 	}
@@ -69,7 +69,7 @@ public class Game {
 	
 	public final int layerHeight;
 	public final int numBlocksFitOnScreen;
-	private AiBitch ai;
+	private Ai ai;
 	private ArrayList<Area> areas;
 	private final int windowWidth;
 	private final int windowHeight;

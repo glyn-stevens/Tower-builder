@@ -3,8 +3,8 @@ package core;
 import java.time.Duration;
 import java.util.Random;
 
-public class AiBitch {
-	public AiBitch(double howPerfectInput) {
+public class Ai {
+	public Ai(double howPerfectInput) {
 		howPerfect = 1 - howPerfectInput;
 		randomGen = new Random();
 		blockDirection = null;
